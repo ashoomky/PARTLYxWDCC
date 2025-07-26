@@ -2,3 +2,31 @@ img {
   width: 300px;
   height: auto;
 }
+
+.popup-window {
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: 300px;
+  background: #fff;
+  border: 2px solid hotpink;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.popup-header {
+  background: hotpink;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.popup-body {
+  padding: 15px;
+}
