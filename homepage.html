@@ -8,10 +8,20 @@
     <body>
         <img src="images/Barbie-s-Dream-Car-27-07-2025.png" class="center-image" alt="Centered Image">
         <img id="fullCar" src="images\barbie_main.png" alt="Full barbie car">
-        <img id="halfCar" src="images\barbie_half.png" alt="Half barbie car">
+        <!-- <img id="halfCar" src="images\barbie_half.png" alt="Half barbie car"> -->
         <br>
         <button id="splitButton" onclick="changeText()">Show half car</button>
-        <button>Info</button>
+        <button onclick="openInfo()" id="infoButton">Info</button>
+        <div id="info" class="popup-window">
+        <div class="popup-header">
+            <span>Info</span>
+            <button onclick="closePopup()">X</button>
+        </div>
+        <div class="popup-body">
+            <p>info text</p>
+            <img src="car.png" alt="Car" width="100">
+        </div>
+        </div>
         <script src="main.js"></script>
     </body>
 </html>
