@@ -6,3 +6,4 @@ function changeText() {
     textIndex = (textIndex + 1) % 2;
     btn.innerHTML = text[textIndex];
 }
+

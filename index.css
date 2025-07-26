@@ -30,3 +30,15 @@ img {
 .popup-body {
   padding: 15px;
 }
+
+#infoButton{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: hotpink;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
