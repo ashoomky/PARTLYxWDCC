@@ -2,3 +2,9 @@ img {
   width: 300px;
   height: auto;
 }
+
+.center-image {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 550px;
+}
