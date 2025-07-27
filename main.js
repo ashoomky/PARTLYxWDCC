@@ -5,11 +5,30 @@ let carImg = document.getElementById("fullCar");
 let frontWheelImg = document.getElementById("frontWheel");
 let rearWheelImg = document.getElementById("rearWheel");
 let engineImg = document.getElementById("engine");
+let windshieldImg = document.getElementById("windshield");
 
 // visibility
 frontWheelImg.style.visibility = 'hidden';
 rearWheelImg.style.visibility = 'hidden';
 engineImg.style.visibility = 'hidden';
+windshieldImg.style.visibility = 'hidden';
+
+// cursor
+carImg.addEventListener('mouseover', () => {
+  carImg.style.cursor = 'pointer';
+});
+frontWheelImg.addEventListener('mouseover', () => {
+  frontWheelImg.style.cursor = 'pointer';
+});
+rearWheelImg.addEventListener('mouseover', () => {
+  rearWheelImg.style.cursor = 'pointer';
+});
+engineImg.addEventListener('mouseover', () => {
+  engineImg.style.cursor = 'pointer';
+});
+windshieldImg.addEventListener('mouseover', () => {
+  windshieldImg.style.cursor = 'pointer';
+});
 
 carImg.addEventListener('click', zoom);
 
@@ -20,6 +39,7 @@ function zoom() {
     frontWheelImg.style.visibility = 'visible';
     rearWheelImg.style.visibility = 'visible';
     engineImg.style.visibility = 'visible';
+    windshieldImg.style.visibility = 'visible';
 }
 
 const wheelText = "Barbie's Dream Car wheels are made of special Barbie rubber.";
@@ -28,6 +48,9 @@ rearWheelImg.addEventListener('click', () => { showInfo(wheelText) });
 
 const engineText = "This is the engine! With a splash of Barbie Land magic, it never stops working!";
 engineImg.addEventListener('click', () => { showInfo(engineText) });
+
+const windshieldText = "The special Barbie Dream Car windshield acts as a barrier against wind and debris.";
+windshieldImg.addEventListener('click', () => { showInfo(windshieldText) });
 
 function showInfo(text) {
     const textBox = document.getElementById("allInfo");
@@ -46,6 +69,7 @@ function back() {
             frontWheelImg.style.visibility = 'hidden';
             rearWheelImg.style.visibility = 'hidden';
             engineImg.style.visibility = 'hidden';
+            windshieldImg.style.visibility = 'hidden';
             break;
         default:
             break;
