@@ -13,5 +13,5 @@ const carImg = document.getElementById("fullCar");
 carImg.addEventListener('click', wheel);
 
 function wheel() {
-    carImg.src = "./images/barbie_half.png";
+    carImg.src = "./images/barbie_half_ver2.png";
 }
