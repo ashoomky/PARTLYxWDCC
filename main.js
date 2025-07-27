@@ -40,6 +40,15 @@ windshieldImg.addEventListener('mouseover', () => {
 headLightImg.addEventListener('mouseover', () => {
   headLightImg.style.cursor = 'pointer';
 });
+seatImg.addEventListener('mouseover', () => {
+  seatImg.style.cursor = 'pointer';
+});
+sideMirrorImg.addEventListener('mouseover', () => {
+  sideMirrorImg.style.cursor = 'pointer';
+});
+tailLight.addEventListener('mouseover', () => {
+  tailLight.style.cursor = 'pointer';
+});
 
 carImg.addEventListener('click', zoom);
 
