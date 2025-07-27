@@ -6,12 +6,14 @@ let frontWheelImg = document.getElementById("frontWheel");
 let rearWheelImg = document.getElementById("rearWheel");
 let engineImg = document.getElementById("engine");
 let windshieldImg = document.getElementById("windshield");
+let headLightImg = document.getElementById("headLight");
 
 // visibility
 frontWheelImg.style.visibility = 'hidden';
 rearWheelImg.style.visibility = 'hidden';
 engineImg.style.visibility = 'hidden';
 windshieldImg.style.visibility = 'hidden';
+headLightImg.style.visibility = 'hidden';
 
 // cursor
 carImg.addEventListener('mouseover', () => {
@@ -40,6 +42,7 @@ function zoom() {
     rearWheelImg.style.visibility = 'visible';
     engineImg.style.visibility = 'visible';
     windshieldImg.style.visibility = 'visible';
+    headLightImg.style.visibility = 'visible';
 }
 
 const wheelText = "Barbie's Dream Car wheels are made of special Barbie rubber.";
