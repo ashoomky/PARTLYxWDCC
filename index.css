@@ -103,6 +103,14 @@ body {
   z-index: 2;
 }
 
+#tailLight{
+  position: absolute;
+  top: 143px;
+  left: 497px;
+  width: 36px;
+  z-index: 2;
+}
+
 .wheels-button {
   padding: 15px;
 }
