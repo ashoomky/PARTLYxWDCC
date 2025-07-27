@@ -4,9 +4,9 @@ const imgArray = ["./images/barbie_main_ver2.png",
 ];
 
 const carImg = document.getElementById("fullCar");
-carImg.addEventListener('click', wheel);
+carImg.addEventListener('click', zoom);
 
-function wheel() {
+function zoom() {
     carImg.src = "./images/barbie_half_ver2.png";
 }
 
