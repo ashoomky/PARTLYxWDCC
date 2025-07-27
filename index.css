@@ -1,5 +1,5 @@
 img {
-  width: 300px;
+  width: 100%;
   height: auto;
 }
 
@@ -16,14 +16,6 @@ body {
   margin: 20px auto 0 auto;
   width: 550px;
 }
-
-/* #fullCar,
-#halfCar {
-  display: block;
-  margin: 20px auto;
-  width: 550px;
-  height: auto;
-} */
 
 .popup-window {
   display: none;
@@ -86,23 +78,24 @@ body {
   margin: 20px auto;
 }
 
-.full-car {
+#fullCar {
   width: 100%;
   height: auto;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
-.barbie-wheels {
+.image-container img:not(#fullCar) {
   position: absolute;
   top: 0;
-  /* Adjust as needed */
   left: 0;
-  /* Adjust as needed */
   width: 100%;
-  /* Or set specific width */
-  pointer-events: none;
-  /* Prevents it from blocking clicks if needed */
+  z-index: 2;
+  pointer-events: auto;
 }
+
+
 
 .wheels-button {
   padding: 15px;
