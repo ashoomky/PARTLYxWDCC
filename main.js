@@ -11,6 +11,11 @@ function zoom() {
     currentElement = "half";
 }
 
+// //wheel button
+// document.wheelImg.addEventListener('click', function () {
+//     // Your code here
+//     alert('Image button clicked!');
+// });
 
 
 // back button functionality
@@ -42,3 +47,4 @@ function closePopup() {
     const popup = document.getElementById("info");
     popup.style.display = "none";
 }
+
