@@ -1,19 +1,30 @@
 let currentElement = "main";
 
+// images
 let carImg = document.getElementById("fullCar");
-let wheelImg = document.getElementById("wheels");
+let frontWheelImg = document.getElementById("frontWheel");
+let rearWheelImg = document.getElementById("rearWheel");
 let engineImg = document.getElementById("engine");
-// wheelImg.style.visibility = 'hidden';
+
+// visibility
+frontWheelImg.style.visibility = 'hidden';
+rearWheelImg.style.visibility = 'hidden';
+engineImg.style.visibility = 'hidden';
+
 carImg.addEventListener('click', zoom);
 
 function zoom() {
     carImg.src = "./images/barbie_half_ver2.png";
-    // wheelImg.style.visibility = 'visible';
     currentElement = "half";
+
+    frontWheelImg.style.visibility = 'visible';
+    rearWheelImg.style.visibility = 'visible';
+    engineImg.style.visibility = 'visible';
 }
 
 const wheelText = "Barbie's Dream Car wheels are made of special Barbie rubber.";
-wheelImg.addEventListener('click', () => { showInfo(wheelText) });
+frontWheelImg.addEventListener('click', () => { showInfo(wheelText) });
+rearWheelImg.addEventListener('click', () => { showInfo(wheelText) });
 
 const engineText = "This is the engine! With a splash of Barbie Land magic, it never stops working!";
 engineImg.addEventListener('click', () => { showInfo(engineText) });
@@ -32,7 +43,9 @@ function back() {
         case "half":
             currentElement = "main";
             carImg.src = "./images/barbie_main_ver2.png";
-            // wheelImg.style.visibility = 'hidden';
+            frontWheelImg.style.visibility = 'hidden';
+            rearWheelImg.style.visibility = 'hidden';
+            engineImg.style.visibility = 'hidden';
             break;
         default:
             break;

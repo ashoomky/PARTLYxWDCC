@@ -110,7 +110,13 @@ body {
   z-index: 2;
 }
 
-
+#windshield{
+  position: absolute;
+  top: 66px;
+  left: 179px;
+  width: 115px;
+  z-index: 2;
+}
 
 .wheels-button {
   padding: 15px;
