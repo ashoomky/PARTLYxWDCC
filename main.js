@@ -9,6 +9,8 @@ function changeText() {
 }
 
 // change image code
+const imgArray = ["./images/barbie_main_ver2.png",];
+
 const carImg = document.getElementById("fullCar");
 carImg.addEventListener('click', wheel);
 
@@ -28,4 +30,12 @@ function openInfo() {
 function closePopup() {
     const popup = document.getElementById("info");
     popup.style.display = "none";
+}
+
+// back button functionality
+const backBtn = document.getElementById("backBtn");
+backBtn.addEventListener('click', back);
+
+function back() {
+
 }
