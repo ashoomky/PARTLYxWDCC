@@ -67,31 +67,30 @@ function zoom() {
 }
 
 const wheelText = "Barbie's Dream Car wheels are made of special Barbie rubber.";
-frontWheelImg.addEventListener('click', () => { showInfo(wheelText) });
-rearWheelImg.addEventListener('click', () => { showInfo(wheelText) });
+frontWheelImg.addEventListener('click', () => { showInfo("Wheel", wheelText) });
+rearWheelImg.addEventListener('click', () => { showInfo("Wheel", wheelText) });
 
 const engineText = "This is the engine! With a splash of Barbie Land magic, it never stops working!";
-engineImg.addEventListener('click', () => { showInfo(engineText) });
+engineImg.addEventListener('click', () => { showInfo("Engine", engineText) });
 
 const windshieldText = "The special Barbie Dream Car windshield acts as a barrier against wind and debris.";
-windshieldImg.addEventListener('click', () => { showInfo(windshieldText) });
+windshieldImg.addEventListener('click', () => { showInfo("Windshield", windshieldText) });
 
 const headLightText = "The headlight is an important part of Barbie's car.";
-headLightImg.addEventListener('click', () => { showInfo(headLightText) });
+headLightImg.addEventListener('click', () => { showInfo("Headlight", headLightText) });
 
 const seatText = "This is the seat.";
-seatImg.addEventListener('click', () => { showInfo(seatText) });
+seatImg.addEventListener('click', () => { showInfo("Seat", seatText) });
 
 const sideMirrorText = "The side mirror helps Barbie see behind her car.";
-sideMirrorImg.addEventListener('click', () => { showInfo(sideMirrorText) });
+sideMirrorImg.addEventListener('click', () => { showInfo("Side Mirror", sideMirrorText) });
 
 const tailLightText = "This is where the tail light is.";
-tailLight.addEventListener('click', () => { showInfo(tailLightText) });
+tailLight.addEventListener('click', () => { showInfo("Tail Light", tailLightText) });
 
-function showInfo(text) {
+function showInfo(heading, text) {
     const textBox = document.getElementById("allInfo");
-    textBox.innerHTML = "<h3>Wheels:</h3>";
-    textBox.innerHTML += "<br><br>"
+    textBox.innerHTML = "<h3>" + heading + "</h3>";
     textBox.innerHTML += text;
 }
 
@@ -111,7 +110,7 @@ function back() {
             headLightImg.style.visibility = 'hidden';
             seatImg.style.visibility = 'hidden';
             sideMirrorImg.style.visibility = 'hidden';
-            windshield.style.visibility = 'hidden';
+            tailLight.style.visibility = 'hidden';
             break;
         default:
             break;
