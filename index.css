@@ -118,7 +118,7 @@ body {
   z-index: 2;
 }
 
-#tailLight{
+#tailLight {
   position: absolute;
   top: 143px;
   left: 497px;
@@ -126,7 +126,7 @@ body {
   z-index: 2;
 }
 
-#sideMirror{
+#sideMirror {
   position: absolute;
   top: 125px;
   left: 208px;
@@ -134,7 +134,7 @@ body {
   z-index: 3;
 }
 
-#seat{
+#seat {
   position: absolute;
   top: 82px;
   left: 268px;
@@ -150,7 +150,7 @@ body {
   z-index: 2;
 }
 
-#headLight{
+#headLight {
   position: absolute;
   top: 168px;
   left: 36px;
@@ -174,7 +174,7 @@ body {
   text-align: center;
 }
 
-#ken{
+#ken {
   position: absolute;
   top: 143px;
   left: 1025px;
@@ -182,10 +182,42 @@ body {
   z-index: 2;
 }
 
-#barbie{
+#barbie {
   position: absolute;
   top: 149px;
   left: 100px;
   width: 148px;
   z-index: 2;
+}
+
+.car-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  /* optional, lets user interact with content above */
+  z-index: 9999;
+}
+
+.moving-image {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100px;
+  animation: moveRight 10s linear infinite;
+}
+
+@keyframes moveRight {
+  0% {
+    left: -500px;
+  }
+
+  100% {
+    left: 200%;
+  }
+}
+
+#car {
+  transform: scaleX(-1);
 }
