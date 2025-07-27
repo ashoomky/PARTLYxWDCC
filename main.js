@@ -11,6 +11,8 @@ function zoom() {
     currentElement = "half";
 }
 
+
+
 // back button functionality
 const backBtn = document.getElementById("backButton");
 backBtn.addEventListener('click', () => { back() });
@@ -20,6 +22,7 @@ function back() {
         case "half":
             currentElement = "main";
             carImg.src = "./images/barbie_main_ver2.png";
+            wheelImg.style.visibility = 'hidden';
             break;
         default:
             break;
