@@ -91,7 +91,7 @@ tailLight.addEventListener('click', () => { showInfo("Tail Light", tailLightText
 function showInfo(heading, text) {
     const textBox = document.getElementById("allInfo");
     textBox.style.display = "block";
-    textBox.innerHTML = "<p>" + heading + "</p>";
+    textBox.innerHTML = "<h8>" + heading + "</h8>";
     textBox.innerHTML += "<p>" + text + "</p>";
 }
 
