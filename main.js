@@ -111,7 +111,7 @@ function back() {
             headLightImg.style.visibility = 'hidden';
             seatImg.style.visibility = 'hidden';
             sideMirrorImg.style.visibility = 'hidden';
-            windshield.style.visibility = 'hidden';
+            tailLight.style.visibility = 'hidden';
             break;
         default:
             break;
