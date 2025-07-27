@@ -9,7 +9,9 @@ function changeText() {
 }
 
 // change image code
-const imgArray = ["./images/barbie_main_ver2.png",];
+const imgArray = ["./images/barbie_main_ver2.png", 
+    ["./images/barbie_half_ver2.png", ["wheel.png", "engine.png", [part1, part2]]]
+];
 
 const carImg = document.getElementById("fullCar");
 carImg.addEventListener('click', wheel);
