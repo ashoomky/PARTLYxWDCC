@@ -1,7 +1,7 @@
 // change image code
-const imgArray = ["./images/barbie_main_ver2.png",
-    ["./images/barbie_half_ver2.png", ["wheel.png", "engine.png"]]
-];
+// const imgArray = ["./images/barbie_main_ver2.png",
+//     ["./images/barbie_half_ver2.png", ["wheel.png", "engine.png"]]
+// ];
 let currentElement = "main";
 
 let carImg = document.getElementById("fullCar");
