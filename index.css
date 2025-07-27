@@ -126,6 +126,22 @@ body {
   z-index: 2;
 }
 
+#sideMirror{
+  position: absolute;
+  top: 125px;
+  left: 208px;
+  width: 50px;
+  z-index: 3;
+}
+
+#seat{
+  position: absolute;
+  top: 82px;
+  left: 268px;
+  width: 138px;
+  z-index: 3;
+}
+
 .wheels-button {
   padding: 15px;
 }
