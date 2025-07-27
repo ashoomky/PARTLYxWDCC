@@ -1,10 +1,13 @@
 let currentElement = "main";
 
 let carImg = document.getElementById("fullCar");
+let wheelImg = document.getElementById("wheels");
+wheelImg.style.visibility = 'hidden';
 carImg.addEventListener('click', zoom);
 
 function zoom() {
     carImg.src = "./images/barbie_half_ver2.png";
+    wheelImg.style.visibility = 'visible';
     currentElement = "half";
 }
 
