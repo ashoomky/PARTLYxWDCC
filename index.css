@@ -17,8 +17,6 @@ body {
   width: 550px;
 }
 
-<<<<<<< HEAD
-=======
 #fullCar,
 #halfCar {
   display: block;
@@ -27,8 +25,6 @@ body {
   height: auto;
 }
 
-
->>>>>>> 2c839fd7ef1eb60f16897978c4f4c358967d2857
 .popup-window {
   display: none;
   position: fixed;
@@ -84,24 +80,24 @@ body {
   float: right;
 }
 
-.image-container{
-    position: relative;   
-    width: 400px;         
-    height: auto;     
+.image-container {
+  position: relative;
+  width: 400px;
+  height: auto;
 }
 
 #fullCar,
 #halfCar {
   display: block;
   margin: 20px auto;
-  width: 550px; 
+  width: 550px;
   height: auto;
 }
 
-#carParts{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;        
-    pointer-events: none;
+#carParts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
 }
