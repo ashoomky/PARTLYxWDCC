@@ -91,7 +91,7 @@ body {
   top: 196px;
   left: 60px;
   width: 115px;
-  z-index: 2;   
+  z-index: 2;
 }
 
 #rearWheel {
@@ -110,7 +110,7 @@ body {
   z-index: 2;
 }
 
-#windshield{
+#windshield {
   position: absolute;
   top: 66px;
   left: 179px;
