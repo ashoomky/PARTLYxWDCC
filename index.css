@@ -181,3 +181,11 @@ body {
   width: 150px;
   z-index: 2;
 }
+
+#barbie{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 250px;
+  z-index: 2;
+}
