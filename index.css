@@ -91,7 +91,7 @@ body {
   top: 196px;
   left: 60px;
   width: 115px;
-  z-index: 2;
+  z-index: 3;
 }
 
 #rearWheel {
@@ -118,12 +118,44 @@ body {
   z-index: 2;
 }
 
+#tailLight{
+  position: absolute;
+  top: 143px;
+  left: 497px;
+  width: 36px;
+  z-index: 2;
+}
+
+#sideMirror{
+  position: absolute;
+  top: 125px;
+  left: 208px;
+  width: 50px;
+  z-index: 3;
+}
+
+#seat{
+  position: absolute;
+  top: 82px;
+  left: 268px;
+  width: 138px;
+  z-index: 3;
+}
+
 #tailLight {
   position: absolute;
   top: 143px;
   left: 497px;
   width: 36px;
   z-index: 2;
+}
+
+#headLight{
+  position: absolute;
+  top: 168px;
+  left: 36px;
+  width: 49px;
+  z-index: 3;
 }
 
 #allInfo {
