@@ -11,6 +11,9 @@ let seatImg = document.getElementById("seat");
 let sideMirrorImg = document.getElementById("sideMirror");
 let tailLight = document.getElementById("tailLight");
 
+let textBox = document.getElementById("allInfo");
+textBox.style.visibility = 'hidden';
+
 // visibility
 frontWheelImg.style.visibility = 'hidden';
 rearWheelImg.style.visibility = 'hidden';
@@ -90,6 +93,7 @@ tailLight.addEventListener('click', () => { showInfo("Tail Light", tailLightText
 
 function showInfo(heading, text) {
     const textBox = document.getElementById("allInfo");
+    textBox.style.visibility = 'visible';
     textBox.style.display = "block";
     textBox.innerHTML = "<h6>" + heading + "</h6>";
     textBox.innerHTML += "<p>" + text + "</p>";
@@ -112,6 +116,9 @@ function back() {
             seatImg.style.visibility = 'hidden';
             sideMirrorImg.style.visibility = 'hidden';
             tailLight.style.visibility = 'hidden';
+            
+            const textBox = document.getElementById("allInfo");
+            textBox.style.visibility = 'hidden';
             break;
         default:
             break;
