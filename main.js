@@ -1,12 +1,17 @@
 let currentElement = "main";
 
 let carImg = document.getElementById("fullCar");
+let wheelImg = document.getElementById("wheels");
+wheelImg.style.visibility = 'hidden';
 carImg.addEventListener('click', zoom);
 
 function zoom() {
     carImg.src = "./images/barbie_half_ver2.png";
+    wheelImg.style.visibility = 'visible';
     currentElement = "half";
 }
+
+
 
 // back button functionality
 const backBtn = document.getElementById("backButton");
@@ -17,6 +22,7 @@ function back() {
         case "half":
             currentElement = "main";
             carImg.src = "./images/barbie_main_ver2.png";
+            wheelImg.style.visibility = 'hidden';
             break;
         default:
             break;
