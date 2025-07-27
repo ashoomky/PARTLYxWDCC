@@ -67,31 +67,32 @@ function zoom() {
 }
 
 const wheelText = "These fabulous wheels are made from ultra-glam Barbie rubber—perfect for cruising through Barbie Land in style!";
-frontWheelImg.addEventListener('click', () => { showInfo(wheelText) });
-rearWheelImg.addEventListener('click', () => { showInfo(wheelText) });
+frontWheelImg.addEventListener('click', () => { showInfo("Wheel", wheelText) });
+rearWheelImg.addEventListener('click', () => { showInfo("Wheel", wheelText) });
 
 const engineText = "Meet the heart of the Dream Car: a sparkle-powered engine that runs on Barbie magic and dreams. It never stops!";
-engineImg.addEventListener('click', () => { showInfo(engineText) });
+engineImg.addEventListener('click', () => { showInfo("Engine", engineText) });
 
 const windshieldText = "This dazzling windshield keeps Barbie safe from wind, glitter storms, and anything else on the road to adventure!";
-windshieldImg.addEventListener('click', () => { showInfo(windshieldText) });
+windshieldImg.addEventListener('click', () => { showInfo("Windshield", windshieldText) });
 
 const headLightText = "These twinkle-bright headlights light up every dream-filled road trip Barbie takes—day or night!";
-headLightImg.addEventListener('click', () => { showInfo(headLightText) });
+headLightImg.addEventListener('click', () => { showInfo("Headlight", headLightText) });
 
 const seatText = "Sit back in these glam-tastic seats designed for comfort, style, and fabulousness on the go!";
-seatImg.addEventListener('click', () => { showInfo(seatText) });
+seatImg.addEventListener('click', () => { showInfo("Seat", seatText) });
 
 const sideMirrorText = "Barbie never misses a moment—these sparkling side mirrors help her see every magical memory behind her!";
-sideMirrorImg.addEventListener('click', () => { showInfo(sideMirrorText) });
+sideMirrorImg.addEventListener('click', () => { showInfo("SideMirror", sideMirrorText) });
 
 const tailLightText = "These shimmering tail lights shine as Barbie makes her stylish exit—always leaving a little sparkle behind!";
-tailLight.addEventListener('click', () => { showInfo(tailLightText) });
+tailLight.addEventListener('click', () => { showInfo("Tail Light", tailLightText) });
 
 function showInfo(heading, text) {
     const textBox = document.getElementById("allInfo");
-    textBox.innerHTML = "<h3>" + heading + "</h3>";
-    textBox.innerHTML += text;
+    textBox.style.display = "block";
+    textBox.innerHTML = "<p>" + heading + "</p>";
+    textBox.innerHTML += "<p>" + text + "</p>";
 }
 
 // back button functionality
