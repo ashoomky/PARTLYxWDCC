@@ -7,6 +7,9 @@ let rearWheelImg = document.getElementById("rearWheel");
 let engineImg = document.getElementById("engine");
 let windshieldImg = document.getElementById("windshield");
 let headLightImg = document.getElementById("headLight");
+let seatImg = document.getElementById("seat");
+let sideMirrorImg = document.getElementById("sideMirror");
+let tailLight = document.getElementById("tailLight");
 
 // visibility
 frontWheelImg.style.visibility = 'hidden';
@@ -14,6 +17,9 @@ rearWheelImg.style.visibility = 'hidden';
 engineImg.style.visibility = 'hidden';
 windshieldImg.style.visibility = 'hidden';
 headLightImg.style.visibility = 'hidden';
+seatImg.style.visibility = 'hidden';
+sideMirrorImg.style.visibility = 'hidden';
+tailLight.style.visibility = 'hidden';
 
 // cursor
 carImg.addEventListener('mouseover', () => {
@@ -46,6 +52,9 @@ function zoom() {
     engineImg.style.visibility = 'visible';
     windshieldImg.style.visibility = 'visible';
     headLightImg.style.visibility = 'visible';
+    seatImg.style.visibility = 'visible';
+    sideMirrorImg.style.visibility = 'visible';
+    tailLight.style.visibility = 'visible';
 }
 
 const wheelText = "Barbie's Dream Car wheels are made of special Barbie rubber.";
@@ -77,6 +86,9 @@ function back() {
             engineImg.style.visibility = 'hidden';
             windshieldImg.style.visibility = 'hidden';
             headLightImg.style.visibility = 'hidden';
+            seatImg.style.visibility = 'hidden';
+            sideMirrorImg.style.visibility = 'hidden';
+            windshield.style.visibility = 'hidden';
             break;
         default:
             break;
