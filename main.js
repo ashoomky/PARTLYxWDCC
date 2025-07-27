@@ -11,7 +11,16 @@ function zoom() {
     currentElement = "half";
 }
 
+const wheelText = "Barbie's Dream Car wheels are made of special Barbie rubber.";
+wheelImg.addEventListener('click', () => { showInfo(wheelText) });
 
+const engineText = "This is the engine! With a splash of Barbie Land magic, it never stops working!";
+engineImg.addEventListener('click', () => { showInfo(engineText) });
+
+function showWheelInfo(text) {
+    const textBox = document.getElementById("");
+    textBox.innerHTML = text;
+}
 
 // back button functionality
 const backBtn = document.getElementById("backButton");
