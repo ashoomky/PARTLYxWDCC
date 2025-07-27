@@ -126,6 +126,18 @@ body {
   z-index: 2;
 }
 
-.wheels-button {
+#allInfo {
+  background: rgb(255, 202, 229);
+  border: 3px solid hotpink;
+  color: white;
   padding: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  width: 400px;
+  height: 100px;
+  overflow: hidden;
+  margin: 40px auto;
+  text-align: center;
 }
