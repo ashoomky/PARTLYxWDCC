@@ -7,6 +7,9 @@ let rearWheelImg = document.getElementById("rearWheel");
 let engineImg = document.getElementById("engine");
 let windshieldImg = document.getElementById("windshield");
 let headLightImg = document.getElementById("headLight");
+let seatImg = document.getElementById("seat");
+let sideMirrorImg = document.getElementById("sideMirror");
+let tailLight = document.getElementById("tailLight");
 
 // visibility
 frontWheelImg.style.visibility = 'hidden';
@@ -14,25 +17,37 @@ rearWheelImg.style.visibility = 'hidden';
 engineImg.style.visibility = 'hidden';
 windshieldImg.style.visibility = 'hidden';
 headLightImg.style.visibility = 'hidden';
+seatImg.style.visibility = 'hidden';
+sideMirrorImg.style.visibility = 'hidden';
+tailLight.style.visibility = 'hidden';
 
 // cursor
 carImg.addEventListener('mouseover', () => {
-  carImg.style.cursor = 'pointer';
+    carImg.style.cursor = 'pointer';
 });
 frontWheelImg.addEventListener('mouseover', () => {
-  frontWheelImg.style.cursor = 'pointer';
+    frontWheelImg.style.cursor = 'pointer';
 });
 rearWheelImg.addEventListener('mouseover', () => {
-  rearWheelImg.style.cursor = 'pointer';
+    rearWheelImg.style.cursor = 'pointer';
 });
 engineImg.addEventListener('mouseover', () => {
-  engineImg.style.cursor = 'pointer';
+    engineImg.style.cursor = 'pointer';
 });
 windshieldImg.addEventListener('mouseover', () => {
-  windshieldImg.style.cursor = 'pointer';
+    windshieldImg.style.cursor = 'pointer';
 });
 headLightImg.addEventListener('mouseover', () => {
-  headLightImg.style.cursor = 'pointer';
+    headLightImg.style.cursor = 'pointer';
+});
+seatImg.addEventListener('mouseover', () => {
+  seatImg.style.cursor = 'pointer';
+});
+sideMirrorImg.addEventListener('mouseover', () => {
+  sideMirrorImg.style.cursor = 'pointer';
+});
+tailLight.addEventListener('mouseover', () => {
+  tailLight.style.cursor = 'pointer';
 });
 
 carImg.addEventListener('click', zoom);
@@ -46,6 +61,9 @@ function zoom() {
     engineImg.style.visibility = 'visible';
     windshieldImg.style.visibility = 'visible';
     headLightImg.style.visibility = 'visible';
+    seatImg.style.visibility = 'visible';
+    sideMirrorImg.style.visibility = 'visible';
+    tailLight.style.visibility = 'visible';
 }
 
 const wheelText = "Barbie's Dream Car wheels are made of special Barbie rubber.";
@@ -58,9 +76,23 @@ engineImg.addEventListener('click', () => { showInfo(engineText) });
 const windshieldText = "The special Barbie Dream Car windshield acts as a barrier against wind and debris.";
 windshieldImg.addEventListener('click', () => { showInfo(windshieldText) });
 
+const headLightText = "The headlight is an important part of Barbie's car.";
+headLightImg.addEventListener('click', () => { showInfo(headLightText) });
+
+const seatText = "This is the seat.";
+seatImg.addEventListener('click', () => { showInfo(seatText) });
+
+const sideMirrorText = "The side mirror helps Barbie see behind her car.";
+sideMirrorImg.addEventListener('click', () => { showInfo(sideMirrorText) });
+
+const tailLightText = "This is where the tail light is.";
+tailLight.addEventListener('click', () => { showInfo(tailLightText) });
+
 function showInfo(text) {
     const textBox = document.getElementById("allInfo");
-    textBox.innerText = text;
+    textBox.innerHTML = "<h3>Wheels:</h3>";
+    textBox.innerHTML += "<br><br>"
+    textBox.innerHTML += text;
 }
 
 // back button functionality
@@ -77,6 +109,9 @@ function back() {
             engineImg.style.visibility = 'hidden';
             windshieldImg.style.visibility = 'hidden';
             headLightImg.style.visibility = 'hidden';
+            seatImg.style.visibility = 'hidden';
+            sideMirrorImg.style.visibility = 'hidden';
+            windshield.style.visibility = 'hidden';
             break;
         default:
             break;
