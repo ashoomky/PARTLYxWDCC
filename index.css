@@ -26,16 +26,18 @@ body {
 
 
 .popup-window {
-  display: none;
-  position: fixed;
-  top: 100px;
-  left: 100px;
-  width: 300px;
-  background: #fff;
-  border: 2px solid hotpink;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  z-index: 1000;
-  border-radius: 8px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: #fff;
+    border: 2px solid hotpink;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    border-radius: 8px;
+
 }
 
 .popup-header {
@@ -74,5 +76,5 @@ body {
     padding: 5px 10px;
     padding: 6px 10px;
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
