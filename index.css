@@ -205,16 +205,16 @@ body {
   bottom: -30px;
   height: 100px;
   width: 100px;
-  animation: moveRight 10s linear infinite;
+  animation: moveRight 6s linear infinite;
 }
 
 @keyframes moveRight {
   0% {
-    left: -500px;
+    left: -200px;
   }
 
   100% {
-    left: 200%;
+    left: 100%;
   }
 }
 
