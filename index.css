@@ -118,6 +118,14 @@ body {
   z-index: 2;
 }
 
+#headLight {
+  position: absolute;
+  top: 168px;
+  left: 36px;
+  width: 47px;
+  z-index: 3;
+}
+
 .wheels-button {
   padding: 15px;
 }
