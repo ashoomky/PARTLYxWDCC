@@ -83,7 +83,7 @@ const seatText = "Sit back in these glam-tastic seats designed for comfort, styl
 seatImg.addEventListener('click', () => { showInfo("Seat", seatText) });
 
 const sideMirrorText = "Barbie never misses a moment, these sparkling side mirrors help her see every magical memory behind her!";
-sideMirrorImg.addEventListener('click', () => { showInfo("SideMirror", sideMirrorText) });
+sideMirrorImg.addEventListener('click', () => { showInfo("Side Mirror", sideMirrorText) });
 
 const tailLightText = "These shimmering tail lights shine as Barbie makes her stylish exit. Always leaving a little sparkle behind!";
 tailLight.addEventListener('click', () => { showInfo("Tail Light", tailLightText) });
