@@ -17,22 +17,22 @@ headLightImg.style.visibility = 'hidden';
 
 // cursor
 carImg.addEventListener('mouseover', () => {
-  carImg.style.cursor = 'pointer';
+    carImg.style.cursor = 'pointer';
 });
 frontWheelImg.addEventListener('mouseover', () => {
-  frontWheelImg.style.cursor = 'pointer';
+    frontWheelImg.style.cursor = 'pointer';
 });
 rearWheelImg.addEventListener('mouseover', () => {
-  rearWheelImg.style.cursor = 'pointer';
+    rearWheelImg.style.cursor = 'pointer';
 });
 engineImg.addEventListener('mouseover', () => {
-  engineImg.style.cursor = 'pointer';
+    engineImg.style.cursor = 'pointer';
 });
 windshieldImg.addEventListener('mouseover', () => {
-  windshieldImg.style.cursor = 'pointer';
+    windshieldImg.style.cursor = 'pointer';
 });
 headLightImg.addEventListener('mouseover', () => {
-  headLightImg.style.cursor = 'pointer';
+    headLightImg.style.cursor = 'pointer';
 });
 
 carImg.addEventListener('click', zoom);
@@ -60,7 +60,9 @@ windshieldImg.addEventListener('click', () => { showInfo(windshieldText) });
 
 function showInfo(text) {
     const textBox = document.getElementById("allInfo");
-    textBox.innerText = text;
+    textBox.innerHTML = "<h3>Wheels:</h3>";
+    textBox.innerHTML += "<br><br>"
+    textBox.innerHTML += text;
 }
 
 // back button functionality

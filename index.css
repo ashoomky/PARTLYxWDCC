@@ -129,7 +129,7 @@ body {
 #allInfo {
   background: rgb(255, 202, 229);
   border: 3px solid hotpink;
-  color: white;
+  color: rgb(70, 22, 22);
   padding: 15px;
   font-weight: bold;
   display: flex;
