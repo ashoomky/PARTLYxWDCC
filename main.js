@@ -16,11 +16,6 @@ wheelImg.addEventListener('click', () => { showInfo(wheelText) });
 
 const engineText = "This is the engine! With a splash of Barbie Land magic, it never stops working!";
 engineImg.addEventListener('click', () => { showInfo(engineText) });
-// //wheel button
-// document.wheelImg.addEventListener('click', function () {
-//     // Your code here
-//     alert('Image button clicked!');
-// });
 
 function showWheelInfo(text) {
     const textBox = document.getElementById("");
