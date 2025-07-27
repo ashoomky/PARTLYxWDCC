@@ -18,9 +18,9 @@ wheelImg.addEventListener('click', () => { showInfo(wheelText) });
 const engineText = "This is the engine! With a splash of Barbie Land magic, it never stops working!";
 engineImg.addEventListener('click', () => { showInfo(engineText) });
 
-function showWheelInfo(text) {
+function showInfo(text) {
     const textBox = document.getElementById("allInfo");
-    textBox.innerHTML = text;
+    textBox.innerText = text;
 }
 
 // back button functionality
