@@ -17,13 +17,13 @@ body {
   width: 550px;
 }
 
-#fullCar,
+/* #fullCar,
 #halfCar {
   display: block;
   margin: 20px auto;
   width: 550px;
   height: auto;
-}
+} */
 
 .popup-window {
   display: none;
@@ -82,22 +82,20 @@ body {
 
 .image-container {
   position: relative;
-  width: 400px;
-  height: auto;
-}
-
-#fullCar,
-#halfCar {
-  display: block;
-  margin: 20px auto;
   width: 550px;
-  height: auto;
+  margin: 20px auto;
 }
 
-#carParts {
-  position: absolute;
-  top: 0;
-  left: 0;
+.full-car {
   width: 100%;
-  pointer-events: none;
+  height: auto;
+  display: block;
+}
+
+.barbie-wheels {
+  position: absolute;
+  top: 0; /* Adjust as needed */
+  left: 0; /* Adjust as needed */
+  width: 100%; /* Or set specific width */
+  pointer-events: none; /* Prevents it from blocking clicks if needed */
 }
