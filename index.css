@@ -17,17 +17,6 @@ img {
   height: auto;
 }
 
-#splitButton {
-  display: block;
-  margin: 10px auto;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: hotpink;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
 
 .popup-window {
   display: none;
@@ -58,9 +47,9 @@ img {
 }
 
 #infoButton{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
     padding: 12px 20px;
     background-color: hotpink;
     color: white;
