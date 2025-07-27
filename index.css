@@ -86,14 +86,29 @@ body {
   z-index: 1;
 }
 
-/* .image-container img:not(#fullCar) {
+#frontWheel {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 196px;
+  left: 60px;
+  width: 115px;
+  z-index: 2;   
+}
+
+#rearWheel {
+  position: absolute;
+  top: 196px;
+  left: 390px;
+  width: 115px;
   z-index: 2;
-  pointer-events: auto;
-} */
+}
+
+#engine {
+  position: absolute;
+  top: 145px;
+  left: 80px;
+  width: 288px;
+  z-index: 2;
+}
 
 
 
