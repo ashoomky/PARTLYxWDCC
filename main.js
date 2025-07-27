@@ -19,7 +19,7 @@ const engineText = "This is the engine! With a splash of Barbie Land magic, it n
 engineImg.addEventListener('click', () => { showInfo(engineText) });
 
 function showWheelInfo(text) {
-    const textBox = document.getElementById("");
+    const textBox = document.getElementById("allInfo");
     textBox.innerHTML = text;
 }
 
