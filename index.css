@@ -20,23 +20,23 @@ body {
 #halfCar {
   display: block;
   margin: 20px auto;
-  width: 550px; 
+  width: 550px;
   height: auto;
 }
 
 
 .popup-window {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    background: #fff;
-    border: 2px solid hotpink;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    z-index: 1000;
-    border-radius: 8px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: #fff;
+  border: 2px solid hotpink;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  border-radius: 10px;
 
 }
 
@@ -55,32 +55,32 @@ body {
   padding: 15px;
 }
 
-#infoButton{
-    background-color: hotpink;
-    color: white;
-    border: none;
-    padding: 6px 10px;
-    border-radius: 8px;
-    margin-right: 40px; /* adds space to the right of this button */
-    float: right;
-    margin-top: 40px;  
-    cursor: pointer;
+#infoButton {
+  background-color: hotpink;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin-right: 40px;
+  /* adds space to the right of this button */
+  float: right;
+  margin-top: 40px;
+  cursor: pointer;
 }
 
-#backButton{
-    background-color: hotpink;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 6px 10px;
-    margin-right: 20px;
-    margin-top: 40px;  
-    float: right;
+#backButton {
+  background-color: hotpink;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 6px 10px;
+  margin-right: 20px;
+  margin-top: 40px;
+  float: right;
 }
 
-#howToTitle{
-    width: 300px;
-    margin: 0 auto;   
+#howToTitle {
+  width: 300px;
+  margin: 0 auto;
 }
-

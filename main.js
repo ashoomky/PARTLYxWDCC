@@ -1,5 +1,5 @@
 // change image code
-const imgArray = ["./images/barbie_main_ver2.png", 
+const imgArray = ["./images/barbie_main_ver2.png",
     ["./images/barbie_half_ver2.png", ["wheel.png", "engine.png", [part1, part2]]]
 ];
 
@@ -25,7 +25,7 @@ function closePopup() {
 }
 
 // back button functionality
-const backBtn = document.getElementById("backBtn");
+const backBtn = document.getElementById("backButton");
 backBtn.addEventListener('click', back);
 
 function back() {
