@@ -13,6 +13,23 @@ rearWheelImg.style.visibility = 'hidden';
 engineImg.style.visibility = 'hidden';
 windshieldImg.style.visibility = 'hidden';
 
+// cursor
+carImg.addEventListener('mouseover', () => {
+  carImg.style.cursor = 'pointer';
+});
+frontWheelImg.addEventListener('mouseover', () => {
+  frontWheelImg.style.cursor = 'pointer';
+});
+rearWheelImg.addEventListener('mouseover', () => {
+  rearWheelImg.style.cursor = 'pointer';
+});
+engineImg.addEventListener('mouseover', () => {
+  engineImg.style.cursor = 'pointer';
+});
+windshieldImg.addEventListener('mouseover', () => {
+  windshieldImg.style.cursor = 'pointer';
+});
+
 carImg.addEventListener('click', zoom);
 
 function zoom() {
@@ -31,6 +48,9 @@ rearWheelImg.addEventListener('click', () => { showInfo(wheelText) });
 
 const engineText = "This is the engine! With a splash of Barbie Land magic, it never stops working!";
 engineImg.addEventListener('click', () => { showInfo(engineText) });
+
+const windshieldText = "The special Barbie Dream Car windshield acts as a barrier against wind and debris.";
+windshieldImg.addEventListener('click', () => { showInfo(windshieldText) });
 
 function showInfo(text) {
     const textBox = document.getElementById("allInfo");
