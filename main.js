@@ -1,15 +1,7 @@
-// change text code
-let textIndex = 0;
-const splitBtn = document.getElementById("splitButton");
-
-function changeText() {
-    const text = ["show half car", "show full car"];
-    textIndex = (textIndex + 1) % 2;
-    splitBtn.innerHTML = text[textIndex];
-}
-
 // change image code
-const imgArray = ["./images/barbie_main_ver2.png",];
+const imgArray = ["./images/barbie_main_ver2.png", 
+    ["./images/barbie_half_ver2.png", ["wheel.png", "engine.png", [part1, part2]]]
+];
 
 const carImg = document.getElementById("fullCar");
 carImg.addEventListener('click', wheel);
