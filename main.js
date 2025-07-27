@@ -5,6 +5,7 @@ carImg.addEventListener('click', zoom);
 
 function zoom() {
     carImg.src = "./images/barbie_half_ver2.png";
+    currentElement = "half";
 }
 
 // back button functionality
