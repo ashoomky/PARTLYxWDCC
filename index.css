@@ -16,15 +16,6 @@ body {
   width: 550px;
 }
 
-#fullCar,
-#halfCar {
-  display: block;
-  margin: 20px auto;
-  width: 550px; 
-  height: auto;
-}
-
-
 .popup-window {
     display: none;
     position: fixed;
@@ -84,3 +75,24 @@ body {
     margin: 0 auto;   
 }
 
+.image-container{
+    position: relative;   
+    width: 400px;         
+    height: auto;     
+}
+
+#fullCar,
+#halfCar {
+  display: block;
+  margin: 20px auto;
+  width: 550px; 
+  height: auto;
+}
+
+#carParts{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;        
+    pointer-events: none;
+}
