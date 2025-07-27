@@ -66,27 +66,27 @@ function zoom() {
     tailLight.style.visibility = 'visible';
 }
 
-const wheelText = "Barbie's Dream Car wheels are made of special Barbie rubber.";
-frontWheelImg.addEventListener('click', () => { showInfo("Wheel", wheelText) });
-rearWheelImg.addEventListener('click', () => { showInfo("Wheel", wheelText) });
+const wheelText = "These fabulous wheels are made from ultra-glam Barbie rubber—perfect for cruising through Barbie Land in style!";
+frontWheelImg.addEventListener('click', () => { showInfo(wheelText) });
+rearWheelImg.addEventListener('click', () => { showInfo(wheelText) });
 
-const engineText = "This is the engine! With a splash of Barbie Land magic, it never stops working!";
-engineImg.addEventListener('click', () => { showInfo("Engine", engineText) });
+const engineText = "Meet the heart of the Dream Car: a sparkle-powered engine that runs on Barbie magic and dreams. It never stops!";
+engineImg.addEventListener('click', () => { showInfo(engineText) });
 
-const windshieldText = "The special Barbie Dream Car windshield acts as a barrier against wind and debris.";
-windshieldImg.addEventListener('click', () => { showInfo("Windshield", windshieldText) });
+const windshieldText = "This dazzling windshield keeps Barbie safe from wind, glitter storms, and anything else on the road to adventure!";
+windshieldImg.addEventListener('click', () => { showInfo(windshieldText) });
 
-const headLightText = "The headlight is an important part of Barbie's car.";
-headLightImg.addEventListener('click', () => { showInfo("Headlight", headLightText) });
+const headLightText = "These twinkle-bright headlights light up every dream-filled road trip Barbie takes—day or night!";
+headLightImg.addEventListener('click', () => { showInfo(headLightText) });
 
-const seatText = "This is the seat.";
-seatImg.addEventListener('click', () => { showInfo("Seat", seatText) });
+const seatText = "Sit back in these glam-tastic seats designed for comfort, style, and fabulousness on the go!";
+seatImg.addEventListener('click', () => { showInfo(seatText) });
 
-const sideMirrorText = "The side mirror helps Barbie see behind her car.";
-sideMirrorImg.addEventListener('click', () => { showInfo("Side Mirror", sideMirrorText) });
+const sideMirrorText = "Barbie never misses a moment—these sparkling side mirrors help her see every magical memory behind her!";
+sideMirrorImg.addEventListener('click', () => { showInfo(sideMirrorText) });
 
-const tailLightText = "This is where the tail light is.";
-tailLight.addEventListener('click', () => { showInfo("Tail Light", tailLightText) });
+const tailLightText = "These shimmering tail lights shine as Barbie makes her stylish exit—always leaving a little sparkle behind!";
+tailLight.addEventListener('click', () => { showInfo(tailLightText) });
 
 function showInfo(heading, text) {
     const textBox = document.getElementById("allInfo");
