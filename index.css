@@ -17,14 +17,6 @@ body {
   width: 550px;
 }
 
-/* #fullCar,
-#halfCar {
-  display: block;
-  margin: 20px auto;
-  width: 550px;
-  height: auto;
-} */
-
 .popup-window {
   display: none;
   position: fixed;
@@ -92,10 +84,3 @@ body {
   display: block;
 }
 
-.barbie-wheels {
-  position: absolute;
-  top: 0; /* Adjust as needed */
-  left: 0; /* Adjust as needed */
-  width: 100%; /* Or set specific width */
-  pointer-events: none; /* Prevents it from blocking clicks if needed */
-}
