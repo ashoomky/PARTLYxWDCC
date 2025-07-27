@@ -15,3 +15,17 @@ carImg.addEventListener('click', wheel);
 function wheel() {
     carImg.src = "./images/barbie_half.png";
 }
+
+// info card hover
+const button = document.getElementById("infoButton");
+const popup = document.getElementById("info");
+
+function openInfo() {
+    const popup = document.getElementById("info");
+    popup.style.display = "block";
+}
+
+function closePopup() {
+    const popup = document.getElementById("info");
+    popup.style.display = "none";
+}
