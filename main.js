@@ -31,6 +31,9 @@ engineImg.addEventListener('mouseover', () => {
 windshieldImg.addEventListener('mouseover', () => {
   windshieldImg.style.cursor = 'pointer';
 });
+headLightImg.addEventListener('mouseover', () => {
+  headLightImg.style.cursor = 'pointer';
+});
 
 carImg.addEventListener('click', zoom);
 
