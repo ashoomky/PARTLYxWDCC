@@ -3,11 +3,12 @@ const imgArray = ["./images/barbie_main_ver2.png",
     ["./images/barbie_half_ver2.png", ["wheel.png", "engine.png", [part1, part2]]]
 ];
 
-const carImg = document.getElementById("fullCar");
+let carImg = document.getElementById("fullCar");
 carImg.addEventListener('click', zoom);
 
 function zoom() {
     carImg.src = "./images/barbie_half_ver2.png";
+    let carImg = document.getElementById("fullCar");
 }
 
 // info card hover
