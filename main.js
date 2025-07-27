@@ -76,6 +76,18 @@ engineImg.addEventListener('click', () => { showInfo(engineText) });
 const windshieldText = "The special Barbie Dream Car windshield acts as a barrier against wind and debris.";
 windshieldImg.addEventListener('click', () => { showInfo(windshieldText) });
 
+const headLightText = "The headlight is an important part of Barbie's car.";
+headLightImg.addEventListener('click', () => { showInfo(headLightText) });
+
+const seatText = "This is the seat.";
+seatImg.addEventListener('click', () => { showInfo(seatText) });
+
+const sideMirrorText = "The side mirror helps Barbie see behind her car.";
+sideMirrorImg.addEventListener('click', () => { showInfo(sideMirrorText) });
+
+const tailLightText = "This is where the tail light is.";
+tailLight.addEventListener('click', () => { showInfo(tailLightText) });
+
 function showInfo(text) {
     const textBox = document.getElementById("allInfo");
     textBox.innerHTML = "<h3>Wheels:</h3>";
