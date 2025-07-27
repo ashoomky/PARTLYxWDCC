@@ -1,7 +1,3 @@
-// change text code
-let textIndex = 0;
-const splitBtn = document.getElementById("splitButton");
-
 // change image code
 const imgArray = ["./images/barbie_main_ver2.png", 
     ["./images/barbie_half_ver2.png", ["wheel.png", "engine.png", [part1, part2]]]
