@@ -3,6 +3,13 @@ img {
   height: auto;
 }
 
+body {
+  margin: 0;
+  background: linear-gradient(to bottom right, #fddde6, #ffe6f0);
+  min-height: 100vh;
+}
+
+
 .h1-image {
   display: block;
   margin: 20px auto 0 auto;
