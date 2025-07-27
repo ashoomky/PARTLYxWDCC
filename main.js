@@ -73,6 +73,7 @@ function back() {
             rearWheelImg.style.visibility = 'hidden';
             engineImg.style.visibility = 'hidden';
             windshieldImg.style.visibility = 'hidden';
+            headLightImg.style.visibility = 'hidden';
             break;
         default:
             break;
