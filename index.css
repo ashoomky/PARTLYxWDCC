@@ -95,3 +95,8 @@ body {
   pointer-events: auto;
 }
 
+
+
+.wheels-button {
+  padding: 15px;
+}
