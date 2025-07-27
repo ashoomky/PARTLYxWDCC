@@ -9,13 +9,27 @@ function changeText() {
 }
 
 // change image code
-const imgArray = ["./images/barbie_main_ver2.png", ];
+const imgArray = ["./images/barbie_main_ver2.png",];
 
 const carImg = document.getElementById("fullCar");
 carImg.addEventListener('click', wheel);
 
 function wheel() {
     carImg.src = "./images/barbie_half_ver2.png";
+}
+
+// info card hover
+const button = document.getElementById("infoButton");
+const popup = document.getElementById("info");
+
+function openInfo() {
+    const popup = document.getElementById("info");
+    popup.style.display = "block";
+}
+
+function closePopup() {
+    const popup = document.getElementById("info");
+    popup.style.display = "none";
 }
 
 // back button functionality
